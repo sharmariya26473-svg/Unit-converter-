@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔄 Unit Converter</h1>
+
+    <div class="card">
+      <input type="number" 
+       id="inputValue" 
+       placeholder="Enter value">
+
+      <select id="conversionType">
+        <option value="kmToMiles">
+          KM → Miles
+        </option>
+        <option value="milesToKm">
+          Miles → KM
+        </option>
+        <option value="kgToPounds">
+          KG → Pounds
+        </option>
+        <option value="poundsToKg">
+          Pounds → KG
+        </option>
+        <option value="celsiusToF">
+          Celsius → Fahrenheit
+        </option>
+        <option value="fToCelsius">
+          Fahrenheit → Celsius
+        </option>
+        <option value="kmToMeters">
+          KM → Meters
+        </option>
+        <option value="metersToKm">
+          Meters → KM
+        </option>
+        <option value="literToGallon">
+          Liters → Gallon
+        </option>
+        <option value="gallonToLiter">
+          Gallon → Liters
+        </option>
+      </select>
+
+      <button onclick="convert()">
+        Convert 🔄
+      </button>
+
+      <div class="result" id="result">
+        Result will appear here
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
